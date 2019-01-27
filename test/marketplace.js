@@ -7,7 +7,8 @@ contract('Marketplace', ([account, secondAccount, thirdAccount, forthAccount]) =
         
         this.instance = await Marketplace.new();
     })
-    
+    // testing wheter only the owner can add an Admin
+    // expect failure if no initiated by Admin
     it ('only owner can add Admin', async () => {
 
         
@@ -16,7 +17,8 @@ contract('Marketplace', ([account, secondAccount, thirdAccount, forthAccount]) =
         await expectThrow(this.instance.addAdmin(list, {from: secondAccount}))
                                                 }
         )
-    
+    // testing wheter only Admins can add an seller
+    // expect failure if no initiated by Admin or owner
     it(' only admin can add seller', async () => {
 
         const list = thirdAccount
@@ -26,7 +28,8 @@ contract('Marketplace', ([account, secondAccount, thirdAccount, forthAccount]) =
 
 
     })
-    
+    // testing wheter only Seller can add an Item
+    // expect failure if no initiated by a Seller Account
     it('only seller can add item' , async () => {
 
         const list = secondAccount
@@ -39,7 +42,8 @@ contract('Marketplace', ([account, secondAccount, thirdAccount, forthAccount]) =
 
 
     })
-
+     // testing wheter only Seller withdraw
+    // expect failure if no initiated by a Seller Account
     it('only  seller can call withdraw', async () => {
         const list = secondAccount
         await this.instance.addSeller(list, {from: account})
@@ -48,7 +52,8 @@ contract('Marketplace', ([account, secondAccount, thirdAccount, forthAccount]) =
         await this.instance.withdraw(list,{from:secondAccount})
       })
 
-
+     // testing wheter simple users can buy
+    
     it('Buyer buys item' , async () => {
         const id = 3
         await this.instance.buyItem(id,{from: thirdAccount})
