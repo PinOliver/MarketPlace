@@ -16,9 +16,7 @@ npm install -g truffle
 ```
 npm install chai
 ```
-```
-npm install install openzeppelin-solidity
-```
+
 ```
 npm install web3
 ```
