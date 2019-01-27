@@ -14,6 +14,9 @@ run these installs in your directory
 npm install -g truffle
 ```
 ```
+npm install chai
+```
+```
 npm install install openzeppelin-solidity
 ```
 ```
