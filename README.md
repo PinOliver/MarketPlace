@@ -9,6 +9,7 @@ Clone repisotory into desired test directory. Have metamask extension in browser
 ### Installing
 
 run these installs in your directory
+and cd into MarketPlace
 
 Openzeppelin is already in the repository, so no need to install
 ```
