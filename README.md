@@ -51,8 +51,10 @@ in client folder run :
 npm run
 ```
 copy the meunomics from the ganache-cli into metamask, to connect
-go to https://www.myetherwallet.com/
-there you can check the functions, check addresses, and call functions
+
+##Myether
+
+Check the deployed_adresses.tx to check functions and addresses
 
 ## Built With
 
