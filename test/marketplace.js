@@ -1,7 +1,7 @@
 const Marketplace = artifacts.require("./Marketplace.sol");
 const {expectThrow, expectEvent, ether} = require('./helpers');
 const BigNumber = web3.BigNumber
-
+// In the tests i will use the helpers.js file, in which we define expectThrow . This enables us to , pass a test when we want a function to fail.
 contract('Marketplace', ([account, secondAccount, thirdAccount, forthAccount]) => {
     beforeEach(async () => {
         
