@@ -51,6 +51,9 @@ in client folder run :
 npm run
 ```
 copy the meunomics from the ganache-cli into metamask, to connect
+go to https://www.myetherwallet.com/
+there you can check the functions, check addresses, and call functions
+
 ## Built With
 
 * Truffle React box https://truffleframework.com/boxes/react
