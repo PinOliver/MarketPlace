@@ -138,7 +138,7 @@ contract Marketplace is Ownable {
     /**  @dev Buys an item
         @param _id the ID of the item 
     */                              
-    function buyItem(uint _id)  public payable  {
+    function buyItem(uint _id)  public payable stopIfEmegency {
 
         Item storage item = items[_id];
         require(item.buyer == address(0));
