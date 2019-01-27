@@ -2,7 +2,7 @@
 
 
 
-## Self Destruction
+## Self Destruction - Circuit Breaker
 Initiating a self destruction of the contract 
 
     function kill() public onlyOwnerandAdmin{
@@ -37,6 +37,7 @@ sellerCheck function :
         return sellers[_id].isSeller;
     }
 
+##
 
 
 
