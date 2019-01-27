@@ -2,12 +2,16 @@
 
 
 
-## Self Destruction - Circuit Breaker
+## Self Destruction 
 Initiating a self destruction of the contract 
 
     function kill() public onlyOwnerandAdmin{
         selfdestruct(msg.sender);
     }
+## - Circuit Breaker
+
+If the owner initates the circuit breaker, buying items is disabled. This allows for the remaining funds to be withdrawn. But new buyers,can buy items.
+
 
 ### User access
 
