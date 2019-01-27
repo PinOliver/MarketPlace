@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 import "node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol";
-import "./CircuitBreaker.sol";
+
 
 /** @title Marketplace */
 contract Marketplace is Ownable {  
@@ -139,7 +139,7 @@ contract Marketplace is Ownable {
     /**  @dev Buys an item
         @param _id the ID of the item 
     */                              
-    function buyItem(uint _id)  public payable stopIfEmegency {
+    function buyItem(uint _id)  public payable  {
 
         Item storage item = items[_id];
         require(item.buyer == address(0));
