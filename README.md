@@ -30,15 +30,16 @@ npm install ganache-cli
 ## Running the tests
 
 ```
+ganache-cli -q
+```
+```
 truffle test
 ```
 Should run 5 tests 
 
 ## Deployment
 To start ganache private test  run :
-```
-ganache-cli -q
-```
+
 in your directory run :
 ```
 truffle compile
